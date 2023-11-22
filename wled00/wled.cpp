@@ -429,6 +429,10 @@ void WLED::setup()
   }
 #endif
 
+   // Set 16 to HIGH.
+   pinMode(16, OUTPUT);
+   digitalWrite(16, HIGH);
+
   DEBUG_PRINTLN(F("Initializing strip"));
   beginStrip();
   DEBUG_PRINT(F("heap ")); DEBUG_PRINTLN(ESP.getFreeHeap());
